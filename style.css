@@ -1,0 +1,1578 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.header-yellow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 238, 216);
+    height: 98px;
+    padding: 20px;
+}
+
+.header-yellow-paragraph {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 20px;
+    color: rgb(68, 47, 58);
+    text-align: center;
+}
+
+.header-yellow-btn {
+    background-color: rgb(247, 202, 93);
+    border: none;
+    border-radius: 47px;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    color: rgb(68, 47, 58);
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 198px;
+    height: 50px;
+    transition: background-color 0.5s;
+}
+
+.header-yellow-btn:hover {
+    background: rgb(228, 164, 44);
+    cursor: pointer;
+}
+
+.first-screen-container {
+    background-image: url(./images/bg_first_screen.jpg);
+    background-position: center -120px;
+    display: block;
+    position: relative;
+    /* width: 100vw; */
+}
+
+.svg {
+    position: absolute;
+    z-index: 1;
+}
+
+.first-screen-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.first-screen-logo {
+    width: 97px;
+    height: 97px;
+    margin-left: 87px;
+    margin-top: 36px;
+}
+
+.first-screen-link-container {
+    margin-top: 36px;
+}
+
+.first-screen-link {
+    margin-right: 38px;
+    text-decoration: none;
+    color: rgb(68, 47, 58);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s linear;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+}
+
+.first-screen-link:hover {
+    border-bottom: 2px solid;
+}
+
+.hamburger-menu {
+    width: 26.65px;
+    height: 26.65px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 45px;
+}
+
+.hamburger-menu div {
+    display: block;
+    width: 100%;
+    height: 2px;
+    /* Висота кожної лінії */
+    background-color: black;
+    /* Чорний колір ліній */
+}
+
+.first-screen-text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    margin-left: 87px;
+    margin-top: 100px;
+}
+
+.first-screen-title {
+    width: 410px;
+    color: rgb(68, 47, 58);
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.44px;
+    line-height: 48.4px;
+    margin-bottom: 22px;
+}
+
+.first-screen-paragraph {
+    width: 425px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(68, 47, 58);
+    margin-bottom: 74px;
+    line-height: 45px;
+}
+
+.first-screen-text-container-img {
+    width: 139px;
+    height: 101px;
+    margin-bottom: 97px;
+}
+
+.second-screen-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 50px 0;
+}
+
+.video-mobile {
+    width: 322px;
+    margin-left: 40px;
+}
+
+.second-screen-content-container {
+    max-width: 440px;
+}
+
+.second-screen-paragraph {
+    color: rgb(68, 47, 58);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17.6px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+.second-screen-title {
+    color: rgb(68, 47, 58);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.26px;
+    line-height: 31.2px;
+    margin-bottom: 60px;
+}
+
+.second-screen-article {
+    display: flex;
+    flex-direction: row;
+    max-width: 320px;
+    margin-bottom: 48px;
+}
+
+.second-screen-article-img {
+    width: 62px;
+    height: 62px;
+}
+
+.second-screen-article-container {
+    margin-left: 16px;
+}
+
+.second-screen-article-title {
+    margin-top: -6px;
+    margin-bottom: 8px;
+    color: rgb(68, 47, 58);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.18px;
+    line-height: 19.8px;
+}
+
+.second-screen-article-paragraph {
+    color: rgb(119, 119, 119);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+}
+
+.second-screen-article:last-of-type {
+    margin-bottom: 0;
+}
+
+.third-screen-container {
+    background-image: url(./images/green_bg.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 30%;
+    background-color: rgb(52, 115, 113);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* max-width: 1824px; */
+    padding-bottom: 80px;
+}
+
+.third-screen-title {
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.38px;
+    line-height: 57px;
+    max-width: 696px;
+    text-align: center;
+    margin-top: 115px;
+    margin-bottom: 115px;
+}
+
+.some-samples-img {
+    position: absolute;
+    width: 213px;
+    height: 150px;
+    right: 0;
+    bottom: 315px;
+    z-index: 5;
+    margin-right: 365px;
+    animation: shake 4s infinite;
+}
+
+@keyframes shake {
+
+    0%,
+    90% {
+        transform: translateY(0);
+    }
+
+    92.5% {
+        transform: translateY(-10px);
+    }
+
+    95% {
+        transform: translateY(10px);
+    }
+
+    97.5% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.cards-container {
+    display: flex;
+    justify-content: flex-start;
+    /* Зміна вирівнювання на початок */
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    /* Додаємо обмеження ширини контейнера */
+    padding: 0 5px;
+    /* Додаємо відступи, щоб карточки не доходили до країв */
+    box-sizing: border-box;
+}
+
+.card {
+    position: relative;
+    background-color: white;
+    margin: 0 10px;
+    border-radius: 5px;
+    max-width: 354px;
+    min-height: 317px;
+    transition: transform 0.5s ease;
+}
+
+.card-img-big {
+    z-index: 1;
+    cursor: pointer;
+    margin: 18px;
+}
+
+.card-img-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.card-text1 {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: rgb(119, 119, 119);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18.2px;
+}
+
+.card-text2 {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    color: rgb(25, 25, 25);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 31.2px;
+}
+
+.card:nth-of-type(2)>.card-text2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card:nth-of-type(2)>.card-text1 {
+    margin-bottom: 5px;
+}
+
+.card:nth-of-type(6)>.card-text2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card:nth-of-type(6)>.card-text1 {
+    margin-bottom: 5px;
+}
+
+/* .card:last-of-type {
+    max-width: 330px;
+    margin-right: 0;
+}
+
+.card:last-of-type>.card-img-big {
+    max-width: 290px;
+} */
+
+.cards-container .card {
+    opacity: 0;
+    transform: translateY(50px);
+    /* Початкове положення з анімацією появи */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: relative;
+}
+
+.cards-container .card.show {
+    opacity: 1;
+    transform: translateY(0);
+    /* Картка з'являється, переміщуючись вгору */
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    /* Піднімається при наведенні */
+}
+
+/* Щоб поєднати обидві анімації, потрібно врахувати обидва стани */
+.cards-container .card.show:hover {
+    transform: translateY(-15px);
+    /* Застосовує підйом при наведенні після появи */
+}
+
+/* Заміна зображення при наведенні на картку */
+.cards-container .card:hover .card-img-play {
+    content: url('./images/play-button-hover.svg');
+    /* Темніша версія кнопки */
+}
+
+.fourth-screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(248, 238, 216);
+}
+
+.fourth-screen-img {
+    /* width: 1824px; */
+    width: 100vw;
+    height: 800px;
+    object-fit: cover;
+}
+
+.fourth-screen-teachers-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    max-width: 952px;
+    background-color: rgb(255, 255, 255);
+    background-image: url(./images/bg-4-block.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 32px;
+    margin-top: -70px;
+    margin-bottom: 115px;
+    padding: 0 24px;
+}
+
+.fourth-screen-teachers-title {
+    color: rgb(68, 47, 58);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    line-height: 33.6px;
+    /* margin-left: 200px; */
+    margin-top: 60px;
+    margin-bottom: 55px;
+    max-width: 550px;
+    text-align: center;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.teachers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 35px;
+    max-width: 260px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    opacity: 0;
+    transform: translateY(50px);
+    /* Початкове положення з анімацією появи */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.teachers.show {
+    opacity: 1;
+    transform: translateY(0);
+    /* Елемент з'являється */
+}
+
+.teachers-img {
+    width: 180px;
+    height: 180px;
+}
+
+.teachers-title {
+    display: block;
+    color: rgb(68, 47, 58);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    margin-top: 27px;
+    margin-bottom: 2px;
+    text-align: center;
+    max-width: 260px;
+    box-sizing: border-box;
+}
+
+.teachers-text {
+    display: block;
+    color: rgb(119, 119, 119);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 2px;
+    text-align: center;
+    max-width: 260px;
+    box-sizing: border-box;
+}
+
+.teachers:nth-of-type(5) {
+    margin-bottom: 10px;
+}
+
+.teachers:nth-of-type(4),
+.teachers:nth-of-type(5),
+.teachers:nth-of-type(6) {
+    margin-bottom: 60px;
+}
+
+.fifth-screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./images/social-proof-section-blob.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 20%;
+    background-color: rgb(77, 144, 143);
+    padding: 60px 0px;
+}
+
+.fifth-screen-title {
+    margin: 8px 15px;
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.38px;
+    line-height: 45.6px;
+    text-align: center;
+    max-width: 660px;
+}
+
+.chitate {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.chitate-img {
+    width: 60px;
+    height: 51.5px;
+    margin-top: 40px;
+}
+
+.chitate-content {
+    position: relative;
+}
+
+.chitate-text {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px;
+    padding: 40px 40px 20px 40px;
+    max-width: 560px;
+    text-align: justify;
+    display: none;
+}
+
+.chitate-text.active {
+    display: block;
+}
+
+.progress-bar {
+    position: relative;
+    width: 250px;
+    height: 5px;
+    background-color: rgba(52, 115, 113);
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background-color: #ffffff;
+    transition: width 10s linear;
+}
+
+.sixth-screen-container {
+    background-color: rgb(248, 238, 216);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./images/shine-founders-background-blob.svg);
+    background-origin: padding-box;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.sixth-screen-title {
+    color: rgb(68, 47, 58);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.38px;
+    line-height: 49.4px;
+    text-align: center;
+    margin-bottom: 36px;
+    max-width: 495px;
+}
+
+.sixth-screen-paragraph {
+    color: rgb(68, 47, 58);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 24px;
+    max-width: 700px;
+}
+
+.sixth-screen-btn {
+    margin-bottom: 30px;
+}
+
+.sixth-screen-img {
+    width: 600px;
+    height: 450.5px;
+}
+
+.footer-container {
+    background-color: rgb(255, 255, 255);
+}
+
+.bottom-container {
+    margin: 50px 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.follow-us-container {
+    width: 100%;
+    max-width: 701px;
+}
+
+.follow-us-title {
+    color: rgb(68, 47, 58);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 17px;
+    margin-bottom: 24px;
+    width: 701px;
+}
+
+.follow-us-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 32px;
+}
+
+.other-info-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 850px;
+    width: 100%;
+}
+
+.follow-us-container,
+.other-info-container {
+    flex: 1;
+    /* Забезпечує рівний поділ простору між цими блоками */
+    min-width: 300px;
+    /* Мінімальна ширина, щоб блоки не зламувалися на дуже малих екранах*/
+}
+
+.company-info-container,
+.resources-info-container,
+.help-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-info-container {
+    width: 221.5px;
+}
+
+.company-info-title {
+    color: rgb(68, 47, 58);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 17px;
+    margin-bottom: 24px;
+}
+
+.company-info-link {
+    color: rgb(119, 119, 119);
+    cursor: pointer;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: left;
+    text-decoration-color: rgb(119, 119, 119);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    margin-bottom: 12px;
+}
+
+.company-info-link:hover {
+    color: rgb(68, 47, 58);
+    text-decoration: underline;
+}
+
+.resources-info-container {
+    width: 209px;
+}
+
+.resources-info-title {
+    color: rgb(68, 47, 58);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 17px;
+    margin-bottom: 24px;
+}
+
+.resources-info-link {
+    color: rgb(119, 119, 119);
+    cursor: pointer;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: left;
+    text-decoration-color: rgb(119, 119, 119);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    margin-bottom: 12px;
+}
+
+.resources-info-link:hover {
+    color: rgb(68, 47, 58);
+    text-decoration: underline;
+}
+
+.help-info-container {
+    width: 180px;
+}
+
+.help-info-title {
+    color: rgb(68, 47, 58);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 17px;
+    margin-bottom: 24px;
+}
+
+.help-info-link {
+    color: rgb(119, 119, 119);
+    cursor: pointer;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: left;
+    text-decoration-color: rgb(119, 119, 119);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    margin-bottom: 12px;
+}
+
+.help-info-link:hover {
+    color: rgb(68, 47, 58);
+    text-decoration: underline;
+}
+
+.download-shine-container {
+    /* width: 850px; */
+    width: 100%;
+    margin: 40px 0;
+    margin-left: 700px;
+}
+
+.download-shine-title {
+    color: rgb(68, 47, 58);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 17px;
+    margin-bottom: 24px;
+}
+
+.download-shine-img {
+    width: 182px;
+    height: 56px;
+    margin-right: 32px;
+}
+
+.download-shine-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.line-bottom {
+    border: 1px solid rgb(247, 237, 240);
+    width: 85%;
+    margin: 9px 136px;
+}
+
+.shine-app {
+    display: flex;
+    justify-content: flex-start;
+    margin: 50px 0;
+    margin-left: 140px;
+}
+
+.shine-app-text {
+    color: rgb(119, 119, 119);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+
+
+@media (max-width: 1048px) {
+    .first-screen-link {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .menu-screen-container {
+        position: fixed;
+        top: 138px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(248, 238, 216);
+        display: flex;
+        justify-content: center flex-start;
+        flex-direction: column;
+        align-items: center;
+        transition: left 0.5s ease;
+        z-index: 1000;
+    }
+
+    .menu-screen-container.open {
+        left: 0;
+    }
+
+    .menu-link {
+        margin-top: 43px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        transition: color 0.3s linear;
+        padding-bottom: 3px;
+        border-bottom: 2px solid transparent;
+    }
+
+    .menu-link:hover {
+        border-bottom: 2px solid;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+        margin-top: 5px;
+        margin-right: 45px;
+    }
+
+    .hamburger-menu div {
+        width: 100%;
+        height: 2px;
+        background-color: black;
+    }
+
+    .cross-button {
+        position: absolute;
+        top: 40px;
+        right: 45px;
+        width: 26.65px;
+        height: 26.65px;
+        cursor: pointer;
+    }
+
+    .cross-button span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        top: 50%;
+        left: 50%;
+        transform-origin: center;
+    }
+
+    .cross-button span:first-child {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .cross-button span:last-child {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .fourth-screen-teachers-container {
+        margin-left: -18px;
+    }
+
+    .fourth-screen-img {
+        height: 575px;
+    }
+
+    .some-samples-img {
+        margin-right: 220px;
+    }
+
+    .download-shine-container {
+        margin-left: 360px;
+    }
+
+    .bottom-container {
+        margin: 50px 80px;
+    }
+
+    .line-bottom {
+        width: 83%;
+        margin: 9px 80px;
+    }
+
+    .shine-app {
+        margin-left: 80px;
+    }
+
+    .follow-us-container {
+        width: 100%;
+        max-width: 362px;
+    }
+
+    .company-info-container {
+        width: 154px;
+    }
+
+    .resources-info-container {
+        width: 141px;
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
+    .fourth-screen-teachers-container {
+        max-width: 778px;
+    }
+
+    .teachers {
+        max-width: 195px;
+        width: 100%;
+    }
+
+    .teachers-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .some-samples-img {
+        width: 142px;
+        height: 100px;
+        margin-right: 170px;
+    }
+
+    .fourth-screen-img {
+        height: 530px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .fourth-screen-teachers-container {
+        max-width: 579px;
+        padding: 0 27px;
+    }
+
+    .fourth-screen-teachers-title {
+        margin-top: 60px;
+        margin-bottom: 55px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .second-screen-container {
+        margin: 50px 36px;
+    }
+
+    .video-mobile {
+        margin: 0;
+    }
+
+    .second-screen-content-container {
+        max-width: 336px;
+    }
+
+    .card {
+        max-width: 224px;
+        min-height: 180px;
+    }
+
+    .card-img-big {
+        max-width: 201.5px;
+        margin: 10px;
+    }
+
+    .card-img-play {
+        transform: translate(-50%, -140%);
+        width: 45px;
+        height: 45px;
+    }
+
+    .card-text1 {
+        margin-left: 11px;
+        margin-right: 11px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: rgb(119, 119, 119);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15.6px;
+    }
+
+    .card-text2 {
+        margin-top: 10px;
+        margin-left: 11px;
+        margin-right: 11px;
+        margin-bottom: 5px;
+        color: rgb(25, 25, 25);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 23.4px;
+    }
+
+    .some-samples-img {
+        top: -100px;
+        margin-right: 123px;
+    }
+
+    .third-screen-container {
+        padding-bottom: 20px;
+    }
+
+    .third-screen-title {
+        max-width: 658px;
+        margin-top: 50px;
+    }
+
+    .fourth-screen-img {
+        height: 412px;
+    }
+
+    .chitate {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chitate-img {
+        width: 38px;
+        height: 32px;
+        margin-top: 10px;
+        margin-bottom: -25px;
+    }
+
+    .chitate-text {
+        padding: 0;
+        padding-top: 37px;
+        max-width: 647px;
+    }
+
+    .bottom-container {
+        margin: 30px 50px;
+    }
+
+    .other-info-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 618px;
+        width: 100%;
+    }
+
+    .follow-us-container {
+        max-width: 618px;
+        width: 100%;
+        margin-bottom: 40px;
+        margin-right: 50px;
+    }
+
+    .follow-us-title {
+        width: 618px;
+    }
+
+    .company-info-container {
+        max-width: 250px;
+        width: 100%;
+        margin-right: 80px;
+    }
+
+    .company-info-title {
+        max-width: 309px;
+        width: 100%;
+    }
+
+    .resources-info-container {
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .help-info-container {
+        max-width: 370px;
+        width: 100%;
+    }
+
+    .download-shine-container {
+        margin-left: 0;
+    }
+
+    .download-shine-img {
+        width: 160px;
+        height: 46px;
+        margin-right: 150px;
+    }
+
+    .line-bottom {
+        margin-left: 50px;
+    }
+
+    .shine-app {
+        margin: 25px;
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    .first-screen-container {
+        height: 715px;
+    }
+
+    svg {
+        display: none;
+    }
+
+    .first-screen-logo {
+        margin-left: 24px;
+    }
+
+    .white-container {
+        top: 280px;
+        left: -350px;
+        position: absolute;
+        width: 700px;
+        height: 437px;
+        background: white;
+        opacity: 0.925;
+        border-radius: 0px 360px 0px 0px;
+    }
+
+    .first-screen-text-container {
+        margin-left: 24px;
+        margin-top: 205px;
+    }
+
+    .first-screen-title {
+        line-height: 120%;
+        text-align: left;
+        max-width: 250px;
+        margin: 35px 0px 5px;
+        font-size: 27px;
+        letter-spacing: 0.01em;
+    }
+
+    .first-screen-paragraph {
+        text-align: left;
+        margin: 4px 0px 25px;
+        max-width: 240px;
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .first-screen-text-container-img {
+        width: 91px;
+        height: 66px;
+        margin-top: 25px;
+    }
+
+    .second-screen-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    .second-screen-content-container {
+        max-width: 570px;
+    }
+
+    .second-screen-article {
+        margin-left: 110px;
+    }
+
+    .second-screen-paragraph {
+        text-align: center;
+    }
+
+    .second-screen-title {
+        text-align: center;
+        max-width: 570px;
+    }
+
+    .second-screen-article-img {
+        width: 42px;
+        height: 42px;
+        margin-top: 10px;
+    }
+
+    .video-mobile {
+        margin-top: 20px;
+    }
+
+    .third-screen-title {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        line-height: 35px;
+        margin-top: 65px;
+        margin-bottom: 90px;
+    }
+
+    .cards-container {
+        margin: 50px 0;
+    }
+
+    .some-samples-img {
+        top: -100px;
+        margin-right: 110px;
+    }
+
+    .fourth-screen-img {
+        height: 365px;
+    }
+
+    .fourth-screen-container {
+        max-width: 646px;
+        width: 100%;
+    }
+
+    .fourth-screen-teachers {
+        max-width: 646px;
+        width: 100%;
+    }
+
+    .fourth-screen-teachers-container {
+        max-width: 646px;
+        width: 100%;
+        padding: 0;
+        background-color: rgb(248, 238, 216);
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .fifth-screen-container {
+        padding-top: 35px;
+    }
+
+    .fifth-screen-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin: 8px 15px;
+    }
+
+    .chitate-img {
+        margin-top: 70px;
+    }
+
+    .chitate-text {
+        font-size: 16px;
+        width: 566px;
+        margin-bottom: 80px;
+    }
+
+    .sixth-screen-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 130%;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 12px;
+        color: rgb(68, 47, 58);
+    }
+
+    .sixth-screen-paragraph {
+        font-size: 20px;
+        color: rgb(68, 47, 58);
+        text-align: center;
+        max-width: 700px;
+        margin-top: 20px;
+        line-height: 27px;
+    }
+
+    .sixth-screen-img {
+        width: 546px;
+        height: 410px;
+    }
+
+    .company-info-container {
+        max-width: 274.5px;
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .header-yellow {
+        height: 125px;
+    }
+
+    .header-yellow-paragraph {
+        line-height: 25px;
+    }
+
+    .first-screen-container {
+        height: 715px;
+    }
+
+    svg {
+        display: none;
+    }
+
+    .first-screen-logo {
+        margin-left: 24px;
+    }
+
+    .white-container {
+        top: 280px;
+        left: -350px;
+        position: absolute;
+        width: 700px;
+        height: 437px;
+        background: white;
+        opacity: 0.925;
+        border-radius: 0px 360px 0px 0px;
+    }
+
+    .first-screen-text-container {
+        margin-left: 24px;
+        margin-top: 205px;
+    }
+
+    .first-screen-title {
+        line-height: 120%;
+        text-align: left;
+        max-width: 250px;
+        margin: 35px 0px 5px;
+        font-size: 27px;
+        letter-spacing: 0.01em;
+    }
+
+    .first-screen-paragraph {
+        text-align: left;
+        margin: 4px 0px 25px;
+        max-width: 240px;
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .first-screen-text-container-img {
+        width: 91px;
+        height: 66px;
+        margin-top: 25px;
+    }
+
+    .second-screen-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    .second-screen-content-container {
+        max-width: 372px;
+    }
+
+    .second-screen-paragraph {
+        text-align: center;
+    }
+
+    .second-screen-title {
+        text-align: center;
+        max-width: 371px;
+    }
+
+    .second-screen-article-img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .second-screen-article {
+        margin-left: 20px;
+        align-items: center;
+    }
+
+    .second-screen-article-paragraph {
+        width: 260px;
+    }
+
+    .video-mobile {
+        margin-top: 20px;
+    }
+
+    .third-screen-container {
+        padding-bottom: 45px;
+    }
+
+    .cards-container {
+        padding: 0;
+    }
+
+    .some-samples-img {
+        top: -100px;
+        margin-right: 85px;
+    }
+
+    .third-screen-title {
+        max-width: 400px;
+        font-size: 24px;
+        line-height: 35px;
+        margin-top: 60px;
+    }
+
+    .fourth-screen-img {
+        height: 250px;
+    }
+
+    .fourth-screen-teachers-container {
+        background-color: rgb(248, 238, 216);
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .fourth-screen-teachers-title {
+        max-width: 395px;
+    }
+
+    .fifth-screen-container {
+        max-width: 444px;
+    }
+
+    .fifth-screen-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin: 8px 0;
+        margin-right: 20px;
+        max-width: 414px;
+    }
+
+    .chitate-img {
+        margin-top: 35px;
+    }
+
+    .chitate-text {
+        padding: 40px;
+        font-size: 16px;
+        line-height: 28px;
+        max-width: 363px;
+    }
+
+    .sixth-screen-container {
+        max-width: 360px;
+        padding-left: 40px;
+    }
+
+    .sixth-screen-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 130%;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 12px;
+        color: rgb(68, 47, 58);
+    }
+
+    .sixth-screen-paragraph {
+        font-family: Poppins;
+        font-size: 20px;
+        color: rgb(68, 47, 58);
+        line-height: 30px;
+        max-width: 344px;
+        margin: 20px 0;
+    }
+
+    .sixth-screen-img {
+        width: 344px;
+        height: 258px;
+    }
+
+    .bottom-container {
+        margin: 25px 35px;
+    }
+
+    .follow-us-container {
+        max-width: 377px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .follow-us-title {
+        max-width: 377px;
+        width: 100%;
+    }
+
+    .company-info-container {
+        max-width: 188.5px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .resources-info-container {
+        max-width: 188.5px;
+        width: 100%;
+    }
+
+    .download-shine-img {
+        margin-right: 50px;
+    }
+
+    .line-bottom {
+        margin: 9px 32.3px;
+    }
+
+    .shine-app {
+        margin: 30px;
+        margin-left: 32.3px;
+    }
+}
