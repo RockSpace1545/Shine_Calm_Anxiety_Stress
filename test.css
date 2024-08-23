@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 50px 150px;
+}
+
+.follow-us-title,
+.company-info-title,
+.resources-info-title,
+.help-info-title,
+.download-shine-title {
+    color: rgb(68, 47, 58);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 17px;
+    margin-bottom: 24px;
+    width: 701px;
+}
+
+.company-info-link,
+.resources-info-link,
+.help-info-link {
+    color: rgb(119, 119, 119);
+    cursor: pointer;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: left;
+    text-decoration-color: rgb(119, 119, 119);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    margin-bottom: 12px;
+}
+
+.company-info-link:hover,
+.resources-info-link:hover,
+.help-info-link:hover {
+    color: rgb(68, 47, 58);
+    text-decoration: underline;
+}
+
+.follow-us-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 32px;
+}
+
+.other-info-container {
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+}
+
+.other-info-resources-and-help-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.company-info-container {
+    display: flex;
+    flex-direction: column;
+    width: 221.5px;
+    /* margin-right: 100px; */
+}
+
+.resources-info-container {
+    display: flex;
+    flex-direction: column;
+    width: 209px;
+}
+
+.help-info-container {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+
+.download-shine-container {
+    margin: 40px 0;
+}
+
+.download-shine-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.download-shine-img {
+    width: 182px;
+    height: 56px;
+    margin-right: 32px;
+}
+
+.line-bottom {
+    border: 1px solid rgb(247, 237, 240);
+    width: 85%;
+    margin: 9px 136px;
+}
+
+.shine-app {
+    display: flex;
+    justify-content: flex-start;
+    margin: 50px 0;
+    margin-left: 140px;
+}
+
+.shine-app-text {
+    color: rgb(119, 119, 119);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px;
+}

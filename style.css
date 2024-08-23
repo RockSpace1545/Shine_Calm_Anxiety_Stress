@@ -640,23 +640,17 @@ body {
     height: 450.5px;
 }
 
-.footer-container {
-    background-color: rgb(255, 255, 255);
-}
-
 .bottom-container {
-    margin: 50px 150px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 50px 150px;
 }
 
-.follow-us-container {
-    width: 100%;
-    max-width: 701px;
-}
-
-.follow-us-title {
+.follow-us-title,
+.company-info-title,
+.resources-info-title,
+.help-info-title,
+.download-shine-title {
     color: rgb(68, 47, 58);
     font-size: 17px;
     font-style: normal;
@@ -667,116 +661,8 @@ body {
     width: 701px;
 }
 
-.follow-us-img {
-    width: 24px;
-    height: 24px;
-    margin-right: 32px;
-}
-
-.other-info-container {
-    display: flex;
-    flex-direction: row;
-    max-width: 850px;
-    width: 100%;
-}
-
-.follow-us-container,
-.other-info-container {
-    flex: 1;
-    /* Забезпечує рівний поділ простору між цими блоками */
-    min-width: 300px;
-    /* Мінімальна ширина, щоб блоки не зламувалися на дуже малих екранах*/
-}
-
-.company-info-container,
-.resources-info-container,
-.help-info-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.company-info-container {
-    width: 221.5px;
-}
-
-.company-info-title {
-    color: rgb(68, 47, 58);
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-    margin-top: 17px;
-    margin-bottom: 24px;
-}
-
-.company-info-link {
-    color: rgb(119, 119, 119);
-    cursor: pointer;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22.5px;
-    text-align: left;
-    text-decoration-color: rgb(119, 119, 119);
-    text-decoration-line: none;
-    text-decoration-style: solid;
-    text-decoration-thickness: auto;
-    margin-bottom: 12px;
-}
-
-.company-info-link:hover {
-    color: rgb(68, 47, 58);
-    text-decoration: underline;
-}
-
-.resources-info-container {
-    width: 209px;
-}
-
-.resources-info-title {
-    color: rgb(68, 47, 58);
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-    margin-top: 17px;
-    margin-bottom: 24px;
-}
-
-.resources-info-link {
-    color: rgb(119, 119, 119);
-    cursor: pointer;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22.5px;
-    text-align: left;
-    text-decoration-color: rgb(119, 119, 119);
-    text-decoration-line: none;
-    text-decoration-style: solid;
-    text-decoration-thickness: auto;
-    margin-bottom: 12px;
-}
-
-.resources-info-link:hover {
-    color: rgb(68, 47, 58);
-    text-decoration: underline;
-}
-
-.help-info-container {
-    width: 180px;
-}
-
-.help-info-title {
-    color: rgb(68, 47, 58);
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-    margin-top: 17px;
-    margin-bottom: 24px;
-}
-
+.company-info-link,
+.resources-info-link,
 .help-info-link {
     color: rgb(119, 119, 119);
     cursor: pointer;
@@ -792,37 +678,62 @@ body {
     margin-bottom: 12px;
 }
 
+.company-info-link:hover,
+.resources-info-link:hover,
 .help-info-link:hover {
     color: rgb(68, 47, 58);
     text-decoration: underline;
 }
 
-.download-shine-container {
-    /* width: 850px; */
-    width: 100%;
-    margin: 40px 0;
-    margin-left: 700px;
+.follow-us-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 32px;
 }
 
-.download-shine-title {
-    color: rgb(68, 47, 58);
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-    margin-top: 17px;
-    margin-bottom: 24px;
+.other-info-container {
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+}
+
+.other-info-resources-and-help-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.company-info-container {
+    display: flex;
+    flex-direction: column;
+    width: 221.5px;
+    /* margin-right: 100px; */
+}
+
+.resources-info-container {
+    display: flex;
+    flex-direction: column;
+    width: 209px;
+}
+
+.help-info-container {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+
+.download-shine-container {
+    margin: 40px 0;
+}
+
+.download-shine-btn {
+    display: flex;
+    flex-direction: row;
 }
 
 .download-shine-img {
     width: 182px;
     height: 56px;
     margin-right: 32px;
-}
-
-.download-shine-btn {
-    display: flex;
-    flex-direction: row;
 }
 
 .line-bottom {
@@ -862,7 +773,7 @@ body {
     .menu-screen-container {
         position: fixed;
         top: 138px;
-        left: -100%;
+        left: -100vw;
         width: 100vw;
         height: 100vh;
         background-color: rgb(248, 238, 216);
@@ -946,10 +857,6 @@ body {
 
     .some-samples-img {
         margin-right: 220px;
-    }
-
-    .download-shine-container {
-        margin-left: 360px;
     }
 
     .bottom-container {
@@ -1109,6 +1016,7 @@ body {
 
     .bottom-container {
         margin: 30px 50px;
+        flex-direction: column;
     }
 
     .other-info-container {
@@ -1116,6 +1024,11 @@ body {
         flex-wrap: wrap;
         max-width: 618px;
         width: 100%;
+    }
+
+    .other-info-resources-and-help-container {
+        flex-wrap: wrap;
+        width: 618px;
     }
 
     .follow-us-container {
@@ -1588,6 +1501,10 @@ body {
 
     .bottom-container {
         margin: 25px 34px;
+    }
+
+    .other-info-resources-and-help-container {
+        flex-direction: column;
     }
 
     .follow-us-container {
