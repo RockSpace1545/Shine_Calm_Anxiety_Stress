@@ -1479,6 +1479,17 @@ body {
         display: none;
     }
 
+    .card:nth-of-type(1) {
+        max-width: 171.5px;
+        margin-left: 0;
+        min-height: 212px;
+        height: 100%;
+    }
+
+    .card:nth-of-type(1)>.card-img-big {
+        max-width: 151.5px;
+    }
+
     .card:nth-of-type(2) {
         max-width: 171.5px;
         margin-right: 0;
@@ -1538,7 +1549,8 @@ body {
 
     .chitate-text {
         padding: 40px;
-        padding-right: 28px;
+        padding-left: 15px;
+        padding-right: 0;
         font-size: 16px;
         line-height: 28px;
         max-width: 363px;
