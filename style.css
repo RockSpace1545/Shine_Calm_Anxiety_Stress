@@ -846,7 +846,9 @@ body {
     line-height: 22.5px;
 }
 
-
+.menu-screen-container {
+    display: none;
+}
 
 @media (max-width: 1048px) {
     .first-screen-link {
