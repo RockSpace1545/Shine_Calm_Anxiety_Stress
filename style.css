@@ -74,7 +74,8 @@ body {
 }
 
 .first-screen-link-container {
-    margin-top: 36px;
+    margin-top: 40px;
+    margin-right: 20px;
 }
 
 .first-screen-link {
@@ -1431,6 +1432,9 @@ body {
     }
 
     .fourth-screen-teachers-container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         background-color: rgb(248, 238, 216);
         margin: 0;
         border-radius: 0;
@@ -1544,5 +1548,128 @@ body {
 
     .shine-img {
         margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .hamburger-menu {
+        margin-right: 25px;
+    }
+
+    .second-screen-content-container {
+        width: 285px;
+    }
+
+    .second-screen-title {
+        font-style: normal;
+        font-size: 26px;
+        line-height: 120%;
+        text-align: center;
+        margin-top: 4px;
+        margin-bottom: 60px;
+    }
+
+    .second-screen-article {
+        margin-left: 0;
+    }
+
+    .second-screen-article-img {
+        margin-top: 0;
+    }
+
+    .second-screen-article-container {
+        width: 225px;
+    }
+
+    .second-screen-article-paragraph {
+        width: 225px;
+    }
+
+    .third-screen-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .third-screen-title {
+        width: 321px;
+        margin-bottom: 70px;
+    }
+
+    .cards-container {
+        padding: 0;
+    }
+
+    .card.card:nth-of-type(3),
+    .card.card:nth-of-type(4),
+    .card.card:nth-of-type(5),
+    .card.card:nth-of-type(6),
+    .card.card:nth-of-type(7) {
+        display: none;
+    }
+
+    .card:nth-of-type(1) {
+        max-width: 151.5px;
+        margin-left: 0;
+        min-height: 212px;
+        height: 100%;
+    }
+
+    .card:nth-of-type(1)>.card-img-big {
+        max-width: 131.5px;
+    }
+
+    .card:nth-of-type(2) {
+        max-width: 151.5px;
+        margin-right: 23px;
+        min-height: 212px;
+        height: 100%;
+    }
+
+    .card:nth-of-type(2)>.card-img-big {
+        max-width: 131.5px;
+    }
+
+    .card-text2 {
+        font-size: 16px;
+    }
+
+    .fourth-screen-teachers-title {
+        width: 308.5px;
+    }
+
+    .fifth-screen-title {
+        margin-right: 0;
+        width: 326.5px;
+    }
+
+    .chitate-text {
+        width: 276.5px;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .sixth-screen-title {
+        width: 256.5px;
+    }
+
+    .sixth-screen-paragraph {
+        width: 256.5px;
+    }
+
+    .bottom-container {
+        margin: 25px 25px;
+    }
+
+    .download-shine-img {
+        margin-right: 2px;
+    }
+
+    .line-bottom {
+        margin-left: 25px;
+    }
+
+    .shine-app {
+        margin: 30px;
+        margin-left: 25px;
     }
 }
