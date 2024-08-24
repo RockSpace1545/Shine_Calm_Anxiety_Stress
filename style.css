@@ -1509,6 +1509,7 @@ body {
 
     .other-info-resources-and-help-container {
         flex-direction: column;
+        width: 330px;
     }
 
     .follow-us-container {
@@ -1533,12 +1534,32 @@ body {
         width: 100%;
     }
 
+    .resources-info-title {
+        width: 188.5px;
+    }
+
+    .help-info-title {
+        width: 188.5px;
+    }
+
     .download-shine-img {
         margin-right: 50px;
     }
 
     .line-bottom {
         margin: 9px 32.3px;
+    }
+
+    .download-shine-container {
+        width: 350px;
+    }
+
+    .download-shine-title {
+        width: 340px;
+    }
+
+    .download-shine-img {
+        margin-right: 20px;
     }
 
     .shine-app {
@@ -1552,6 +1573,10 @@ body {
 }
 
 @media only screen and (max-width: 375px) {
+    body {
+        width: 100vw;
+    }
+
     .hamburger-menu {
         margin-right: 25px;
     }
@@ -1658,6 +1683,25 @@ body {
 
     .bottom-container {
         margin: 25px 25px;
+    }
+
+    .other-info-resources-and-help-container {
+        width: 325px;
+    }
+
+    .download-shine-container {
+        max-width: 350.5px;
+        width: 100%;
+    }
+
+    .download-shine-title {
+        max-width: 350.5px;
+        width: 100%;
+    }
+
+    .download-shine-btn {
+        max-width: 350.5px;
+        width: 100%;
     }
 
     .download-shine-img {
